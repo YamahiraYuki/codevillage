@@ -1,0 +1,46 @@
+.menu {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.menu-wrap {
+  width: 84%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 70px;
+  img {
+    width: 100%;
+  }
+  h2 {
+    font-size: 3rem;
+    color: #000000;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+
+.menu-des {
+  width: 94%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  letter-spacing: 1.6px;
+  font-family: Roboto, serif;
+  padding-top: 30px;
+}
+
+.value {
+  font-size: 1.6rem;
+  color: black;
+  text-align: right;
+  padding-top: 30px;
+}

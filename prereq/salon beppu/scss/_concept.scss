@@ -1,0 +1,61 @@
+.concept {
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    $light-ash 0%,
+    $light-ash 50%,
+    $ash 50%,
+    $ash 100%
+  );
+}
+
+.image-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  height: 37%;
+  margin: 0 auto;
+}
+
+.concept-img1,
+.concept-img2 {
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+.concept-img1 {
+  width: 63%;
+}
+.concept-img2 {
+  width: 36%;
+}
+
+.concept-m {
+  width: 72%;
+  height: 11.6%;
+  padding: 6% 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 16px;
+    @include s-pc {
+      font-size: 3.5rem;
+      letter-spacing: 9px;
+    }
+  }
+
+  p {
+    width: 46%;
+    font-family: "Hiragino Kaku Gothic Pro";
+    font-size: 1.6rem;
+    letter-spacing: 1.6px;
+    @include s-pc {
+      letter-spacing: 1px;
+    }
+  }
+}

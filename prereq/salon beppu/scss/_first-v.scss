@@ -1,0 +1,38 @@
+.first-v {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.fv-catch {
+  color: black;
+  font-size: 3.8rem;
+  letter-spacing: 3.8px;
+  width: 46%;
+  height: 210px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  @include sp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.en-catch {
+  font-family: Zapfino;
+}
+
+.fv-photo {
+  width: 54%;
+  height: 100%;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}

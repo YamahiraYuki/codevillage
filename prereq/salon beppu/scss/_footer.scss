@@ -1,0 +1,45 @@
+footer {
+  background-color: white;
+  &:before {
+    content: "";
+    display: block;
+    background-color: #70707036;
+    height: 1px;
+    width: 84%;
+    margin: 12% auto 0;
+  }
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 6% 8%;
+}
+
+.footer-name {
+  color: #7070704d;
+  font-size: 3.2rem;
+  letter-spacing: 3.2px;
+  display: inline-block;
+}
+
+.footer-icon {
+  color: black;
+  display: inline-block;
+  font-size: larger;
+}
+
+.fa-twitter {
+  margin-left: 25px;
+  margin-right: 10px;
+}
+
+.footer-btn {
+  font-size: 1.8rem;
+  font-family: "Roboto Mono for Powerline";
+  letter-spacing: 1.8px;
+  color: $gray;
+  background-color: white;
+  padding: 10px 40px;
+  border: 1px solid;
+}

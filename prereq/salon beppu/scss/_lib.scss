@@ -1,0 +1,68 @@
+/////////////////////
+////    変数     /////
+/////////////////////
+$gray: #707070;
+$light-ash: #a193861f;
+$ash: #a1938689;
+
+/////////////////////
+////    mixin   /////
+/////////////////////
+@mixin pc {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
+
+@mixin s-pc {
+  @media screen and (max-width: 1230px) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (max-width: 959px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+/////////////////////
+////    共通    /////
+/////////////////////
+
+html {
+  font-size: 62.5%; // 10px
+}
+
+body {
+  color: $gray;
+  font-family: "Roboto Mono for Powerline", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.title {
+  font-family: Roboto;
+  font-size: 1.8rem;
+  letter-spacing: 5.4px;
+  padding: 15% 0 10px 8%;
+  display: inline-block;
+  position: relative;
+  &:after {
+    content: "";
+    width: 95px;
+    height: 1px;
+    background-color: $gray;
+    position: absolute;
+    right: -112px;
+    bottom: 20px;
+  }
+}
+
+.ja-catch {
+  font-family: "Hiragino Mincho Pro";
+}
