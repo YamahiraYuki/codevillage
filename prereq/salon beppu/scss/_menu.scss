@@ -5,27 +5,50 @@
 
 .menu-wrap {
   width: 84%;
+  @include sp {
+    width: 100%;
+  }
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  @include tab {
+    flex-direction: column;
+  }
 }
 
 .menu-item {
   width: 25%;
+  @include tab {
+    width: 89%;
+    margin: 0 auto;
+    padding-bottom: 65px;
+  }
+
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   overflow: hidden;
   margin-bottom: 70px;
+}
+
+.menu-ph {
+  width: 100%;
   img {
     width: 100%;
   }
-  h2 {
-    font-size: 3rem;
-    color: #000000;
-    letter-spacing: 3px;
-    text-align: center;
-    padding-top: 40px;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #000000;
+  letter-spacing: 3px;
+  text-align: center;
+
+  padding-top: 40px;
+  @include sp {
+    text-align: left;
+    margin-left: 3%;
+    paddint-top: 30px;
   }
 }
 

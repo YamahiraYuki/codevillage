@@ -7,6 +7,15 @@
     $ash 50%,
     $ash 100%
   );
+  @include sp {
+    background: linear-gradient(
+      to bottom,
+      $light-ash 0%,
+      $light-ash 40%,
+      $ash 40%,
+      $ash 100%
+    );
+  }
 }
 
 .image-wrap {
@@ -19,6 +28,7 @@
 
 .concept-img1,
 .concept-img2 {
+  overflow: hidden;
   img {
     height: 100%;
     width: 100%;
@@ -26,18 +36,30 @@
 }
 .concept-img1 {
   width: 63%;
+  @include sp {
+    width: 49%;
+  }
 }
 .concept-img2 {
   width: 36%;
+  @include sp {
+    width: 49%;
+  }
 }
 
 .concept-m {
   width: 72%;
+  @include sp {
+    width: 100%;
+  }
   height: 11.6%;
   padding: 6% 0;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  @include sp {
+    flex-direction: column;
+  }
   align-items: center;
   color: #ffffff;
   h1 {
@@ -46,6 +68,11 @@
     @include s-pc {
       font-size: 3.5rem;
       letter-spacing: 9px;
+    }
+    @include sp {
+      font-size: 1.8rem;
+      letter-spacing: 7.2px;
+      padding: 0 0 20px;
     }
   }
 
@@ -56,6 +83,10 @@
     letter-spacing: 1.6px;
     @include s-pc {
       letter-spacing: 1px;
+    }
+    @include sp {
+      width: 89%;
+      line-height: 1.5em;
     }
   }
 }

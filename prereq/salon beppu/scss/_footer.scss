@@ -7,6 +7,9 @@ footer {
     height: 1px;
     width: 84%;
     margin: 12% auto 0;
+    @include sp {
+      margin: 12%;
+    }
   }
 }
 
@@ -14,6 +17,19 @@ footer {
   display: flex;
   justify-content: space-between;
   margin: 6% 8%;
+  @include sp {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.footer-set {
+  @include sp {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
 }
 
 .footer-name {
@@ -21,6 +37,10 @@ footer {
   font-size: 3.2rem;
   letter-spacing: 3.2px;
   display: inline-block;
+  @include sp {
+    font-size: 1.8rem;
+    letter-spacing: 1.8px;
+  }
 }
 
 .footer-icon {
@@ -32,6 +52,9 @@ footer {
 .fa-twitter {
   margin-left: 25px;
   margin-right: 10px;
+  @include sp {
+    margin-left: 0;
+  }
 }
 
 .footer-btn {
@@ -42,4 +65,8 @@ footer {
   background-color: white;
   padding: 10px 40px;
   border: 1px solid;
+  @include sp {
+    width: 50%;
+    margin: 0 auto 12%;
+  }
 }

@@ -52,6 +52,9 @@ body {
   padding: 15% 0 10px 8%;
   display: inline-block;
   position: relative;
+  @include sp {
+    padding: 60px 0 50px 20px;
+  }
   &:after {
     content: "";
     width: 95px;
@@ -60,6 +63,15 @@ body {
     position: absolute;
     right: -112px;
     bottom: 20px;
+    @include sp {
+      content: "";
+      width: 44px;
+      height: 1px;
+      background-color: #707070;
+      position: absolute;
+      right: -66px;
+      bottom: 58px;
+    }
   }
 }
 
