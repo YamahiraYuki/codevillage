@@ -12,6 +12,6 @@ array.splice(1, 2);
 
 console.log(array); //=> [2]
 
-array[0] = 100;
+array.splice(0, 1, 100);
 
 console.log(array); //=> [100]
