@@ -46,5 +46,5 @@ function map2(callback) {
     return resultArray
 }
 
-var resultArray = map2(callback)
-console.log(resultArray)
+var resultArray2 = map2(callback)
+console.log(resultArray2)
