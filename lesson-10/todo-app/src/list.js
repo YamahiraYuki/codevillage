@@ -1,18 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
+import { Item } from './item' //ファイルのときは"./"をつけること
 
-export class List extends Component {
-    constructor() {
-        super()
-        this.backgroundcolor = "#0011aa"
-    }
+export const List = (props) => {
+    return (
+        <ul>
+            {
+                props.todoItems.map(todoObj => {
+                    return (
+                        <Item todoObject={todoObj} key={todoObj.id} />
+                    );
+                })
+            }
 
-    render() {
-        return (
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        )
-    }
+        </ul>
+    )
 }
+
+
